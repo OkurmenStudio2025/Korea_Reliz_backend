@@ -81,7 +81,7 @@ phonenumbers==8.13.38
 pillow==10.4.0
 proglog==0.1.10
 prompt_toolkit==3.0.47
-protobuf==3.20.3
+protobuf==4.25.3
 psutil==6.0.0
 psycopg2-binary==2.9.9
 py-cpuinfo==9.0.0
