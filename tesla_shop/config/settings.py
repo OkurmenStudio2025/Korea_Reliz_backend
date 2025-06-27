@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('POSTGRES_DB'),
-        'USER': config('POSTGRES_USER'),
+        'NAME': config('POSTGRES_DB'),       # обычно 'railway'
+        'USER': config('POSTGRES_USER'),     # обычно 'postgres'
         'PASSWORD': config('POSTGRES_PASSWORD'),
-        'HOST': config('RAILWAY_PRIVATE_DOMAIN'),
-        'PORT': config('DB_PORT', default='5432'),
+        'HOST': config('PGHOST'),             # в твоём случае 'RAILWAY_PRIVATE_DOMAIN'
+        'PORT': config('PGPORT', default='5432'),
     }
 }
 
