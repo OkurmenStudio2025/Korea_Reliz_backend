@@ -1,0 +1,115 @@
+ 
+ -------------- celery@frontend-korea-center v5.4.0 (opalescent)
+--- ***** ----- 
+-- ******* ---- Linux-6.8.0-45-generic-x86_64-with-glibc2.39 2024-10-03 11:41:49
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         config:0x7db24460c080
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . account.tasks.send_activation_code
+
+[2024-10-03 11:41:50,163: WARNING/MainProcess] /home/jumaly/tesla_shop/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-10-03 11:41:50,173: INFO/MainProcess] Connected to redis://localhost:6379//
+[2024-10-03 11:41:50,175: WARNING/MainProcess] /home/jumaly/tesla_shop/venv/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-10-03 11:41:50,179: INFO/MainProcess] mingle: searching for neighbors
+[2024-10-03 11:41:51,188: INFO/MainProcess] mingle: all alone
+[2024-10-03 11:41:51,197: INFO/MainProcess] celery@frontend-korea-center ready.
+[2024-10-03 11:42:33,513: INFO/MainProcess] Task account.tasks.send_activation_code[53186e50-5856-4d43-8574-620d03d3ab38] received
+[2024-10-03 11:42:34,006: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>55783c6a-6503-4290-a982-d7425ac429c1</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-03 11:42:34,010: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[53186e50-5856-4d43-8574-620d03d3ab38] succeeded in 0.4952046260004863s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>55783c6a-6503-4290-a982-d7425ac429c1</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-03 15:28:22,199: INFO/MainProcess] Task account.tasks.send_activation_code[ef440a9b-909c-4a86-92a7-f23121d2df8a] received
+[2024-10-03 15:28:22,754: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>69de238c-fc45-4c5b-85df-38909b22de07</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-03 15:28:22,755: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[ef440a9b-909c-4a86-92a7-f23121d2df8a] succeeded in 0.5542613290017471s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>69de238c-fc45-4c5b-85df-38909b22de07</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-03 19:57:13,479: INFO/MainProcess] Task account.tasks.send_activation_code[b3e12e42-6373-4d15-9025-966351dd0456] received
+[2024-10-03 19:57:14,042: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>e2ba0ddc-59ba-40b2-b40d-0fbfd5d944f9</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-03 19:57:14,043: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[b3e12e42-6373-4d15-9025-966351dd0456] succeeded in 0.56102824897971s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>e2ba0ddc-59ba-40b2-b40d-0fbfd5d944f9</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-03 20:03:16,859: INFO/MainProcess] Task account.tasks.send_activation_code[3d98a8bb-d374-4668-9c44-93327afcb860] received
+[2024-10-03 20:03:17,158: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>ac9599b4-123c-41ec-91c0-11dbee510153</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-03 20:03:17,160: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[3d98a8bb-d374-4668-9c44-93327afcb860] succeeded in 0.29889471500064246s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>ac9599b4-123c-41ec-91c0-11dbee510153</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-04 08:30:22,252: INFO/MainProcess] Task account.tasks.send_activation_code[2598e3c5-5d16-4dda-8ad9-816fe941a0ec] received
+[2024-10-04 08:30:22,575: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>90fe7f7f-e7f0-4462-aec1-72b2c6d5abea</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-04 08:30:22,577: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[2598e3c5-5d16-4dda-8ad9-816fe941a0ec] succeeded in 0.3229561260086484s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>90fe7f7f-e7f0-4462-aec1-72b2c6d5abea</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-04 17:51:49,100: INFO/MainProcess] Task account.tasks.send_activation_code[fdf22ae2-4e52-49fb-892d-c47edf5e95b9] received
+[2024-10-04 17:51:49,732: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>e36eaf5c-eefe-4a7b-872c-1f4d53c5dd4d</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-04 17:51:49,734: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[fdf22ae2-4e52-49fb-892d-c47edf5e95b9] succeeded in 0.6311399920086842s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>e36eaf5c-eefe-4a7b-872c-1f4d53c5dd4d</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-04 20:11:53,166: INFO/MainProcess] Task account.tasks.send_activation_code[c46d6fe9-0b95-4df0-8302-4536666903e2] received
+[2024-10-04 20:11:53,695: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>8164e4c8-599d-4111-967d-244b0c4b2612</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-04 20:11:53,696: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[c46d6fe9-0b95-4df0-8302-4536666903e2] succeeded in 0.5286768230143934s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>8164e4c8-599d-4111-967d-244b0c4b2612</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-04 20:59:55,752: INFO/MainProcess] Task account.tasks.send_activation_code[98129b68-7df5-4656-924b-ff40f5c29805] received
+[2024-10-04 20:59:56,318: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>0a1f32a4-c541-4da9-9cd2-5039f64d26a1</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-04 20:59:56,319: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[98129b68-7df5-4656-924b-ff40f5c29805] succeeded in 0.5660579779942054s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>0a1f32a4-c541-4da9-9cd2-5039f64d26a1</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-04 21:54:51,214: INFO/MainProcess] Task account.tasks.send_activation_code[7715b8d9-30bb-42d6-b692-f3a1d515a14d] received
+[2024-10-04 21:54:51,789: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>a5c301ac-25e4-4482-95a0-ba691336fdc4</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-04 21:54:51,791: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[7715b8d9-30bb-42d6-b692-f3a1d515a14d] succeeded in 0.5749397139879875s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>a5c301ac-25e4-4482-95a0-ba691336fdc4</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-06 06:46:49,738: INFO/MainProcess] Task account.tasks.send_activation_code[f4523f6a-5b81-4f68-8161-6ccee6e469a1] received
+[2024-10-06 06:46:50,120: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>67d9629c-f0e7-485a-82ea-a8a1585a7679</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-06 06:46:50,121: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[f4523f6a-5b81-4f68-8161-6ccee6e469a1] succeeded in 0.3819665010087192s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>67d9629c-f0e7-485a-82ea-a8a1585a7679</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-06 06:52:03,839: INFO/MainProcess] Task account.tasks.send_activation_code[c59f0537-890c-4439-8d1a-975c2e1863a0] received
+[2024-10-06 06:52:03,945: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>874b0ee2-8234-4dfe-bff9-43432faca1f2</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-06 06:52:03,946: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[c59f0537-890c-4439-8d1a-975c2e1863a0] succeeded in 0.1052329619997181s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>874b0ee2-8234-4dfe-bff9-43432faca1f2</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-06 08:42:54,978: INFO/MainProcess] Task account.tasks.send_activation_code[f775f256-40bb-4933-8ffd-7b5c8d89e7c4] received
+[2024-10-06 08:42:55,552: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>d9d892b3-770b-4286-b456-fa7599a7d1ec</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-06 08:42:55,553: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[f775f256-40bb-4933-8ffd-7b5c8d89e7c4] succeeded in 0.574590441014152s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>d9d892b3-770b-4286-b456-fa7599a7d1ec</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-06 11:50:20,340: INFO/MainProcess] Task account.tasks.send_activation_code[c2c98827-5e31-4f14-8389-72ad377804b1] received
+[2024-10-06 11:50:20,660: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>4b570d8f-d1b7-4c47-8a59-ef89bb99f9c4</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-06 11:50:20,661: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[c2c98827-5e31-4f14-8389-72ad377804b1] succeeded in 0.31939470599172637s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>4b570d8f-d1b7-4c47-8a59-ef89bb99f9c4</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-09 10:39:12,989: INFO/MainProcess] Task account.tasks.send_activation_code[4e72292e-5292-4621-8a99-d598f40874a1] received
+[2024-10-09 10:39:13,519: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>ebe2080b-286f-4263-b34a-12db0deceeac</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-09 10:39:13,520: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[4e72292e-5292-4621-8a99-d598f40874a1] succeeded in 0.5277715109987184s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>ebe2080b-286f-4263-b34a-12db0deceeac</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-11 08:50:41,958: INFO/MainProcess] Task account.tasks.send_activation_code[45d06b15-abd9-497a-92db-11071f6af74c] received
+[2024-10-11 08:50:43,270: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>2064450b-9380-4b30-b885-4762858f30e5</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-11 08:50:43,272: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[45d06b15-abd9-497a-92db-11071f6af74c] succeeded in 1.3116068439558148s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>2064450b-9380-4b30-b885-4762858f30e5</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
+[2024-10-24 10:30:41,660: INFO/MainProcess] Task account.tasks.send_activation_code[268a13e1-e5d3-4de4-8ae4-8d8f26ffe49e] received
+[2024-10-24 10:30:42,014: INFO/ForkPoolWorker-2] Ответ сервера: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>24882bd1-9090-4949-945f-d01eab96c634</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+
+[2024-10-24 10:30:42,016: INFO/ForkPoolWorker-2] Task account.tasks.send_activation_code[268a13e1-e5d3-4de4-8ae4-8d8f26ffe49e] succeeded in 0.3538830350153148s: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><response xmlns="http://Giper.mobi/schema/Message"><id>24882bd1-9090-4949-945f-d01eab96c634</id><status>0</status><phones>1</phones><smscnt>1</smscnt></response>
+'
