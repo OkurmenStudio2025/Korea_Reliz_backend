@@ -6,9 +6,9 @@ import os
 
 
 TOKEN = '7928953840:AAGnh5kDj_DSF04NyPsPJvL5z2dQti6_fJQ'
-API_URL = 'https://koreacenter.kg/api/products/product/'
-CATEGORY_API_URL = 'https://koreacenter.kg/api/products/categories/'
-MARKA_API_URL = 'https://koreacenter.kg/api/products/Marka/'
+API_URL = 'https://django-rest-starter-production-3ff5.up.railway.app/api/products/product/'
+CATEGORY_API_URL = 'https://django-rest-starter-production-3ff5.up.railway.app/api/products/categories/'
+MARKA_API_URL = 'https://django-rest-starter-production-3ff5.up.railway.app/api/products/Marka/'
 
 bot = telebot.TeleBot(TOKEN)
 
